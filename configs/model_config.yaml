@@ -1,0 +1,35 @@
+data:
+  train_path: data/processed/drugsComTrain_raw.csv
+  test_path: data/processed/drugsComTest_raw.csv
+  clean_output: data/processed/df_clean.csv
+  focused_output: data/processed/df_focused.csv
+  focus_conditions:
+    - Depression
+    - Anxiety
+
+preprocessing:
+  random_seed: 42
+  min_review_length: 10
+  split_ratios:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+
+lda:
+  n_topics: 8
+  random_seed: 42
+  max_features: 5000
+
+models:
+  distilbert:
+    checkpoint: distilbert-base-uncased
+    learning_rate: 2.0e-5
+    batch_size: 16
+    epochs: 3
+    weight_decay: 0.01
+    max_length: 512
+  bart:
+    checkpoint: facebook/bart-large-cnn
+    max_input_length: 1024
+    max_output_length: 200
+    num_beams: 4

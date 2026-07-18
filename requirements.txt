@@ -12,3 +12,7 @@ nltk
 tqdm
 rouge-score
 streamlit
+matplotlib
+seaborn
+pyyaml
+wordcloud
