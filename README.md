@@ -47,9 +47,9 @@ Note: `review_clean` (minimally cleaned natural text) will be used for transform
 - Classification: precision, recall, F1 against labeled adverse-event flags.
 - Summaries: ROUGE scores and qualitative review; ensure conservative, source-grounded outputs.
 
-- # BART, T5, and GPT-2 Benchmarking Results
+### BART, T5, and GPT-2 Benchmarking Results
 
-## Objective
+### Objective
 
 This experiment compared BART, T5, and GPT-2 for summarizing patient drug reviews related to Depression and Anxiety. All three models were evaluated on the same fixed sample of 50 reviews.
 
@@ -62,13 +62,13 @@ The comparison focused on:
 - Adverse-event focus
 - Overall summary quality
 
-## Models
+### Models
 
 - BART: `facebook/bart-large-cnn`
 - T5: `google-t5/t5-small`
 - GPT-2: `gpt2`
 
-## Dataset Sample
+### Dataset Sample
 
 The benchmark used 50 reviews from `df_focused.csv`:
 
@@ -78,7 +78,7 @@ The benchmark used 50 reviews from `df_focused.csv`:
 - Reviews contained at least 20 words
 - The same sample was used for every model
 
-## Quantitative Results
+### Quantitative Results
 
 | Model | Total Time | Average Time per Review | Average Output-to-Source Ratio | Exact Copy Rate | Near-Copy Rate |
 |---|---:|---:|---:|---:|---:|
@@ -88,7 +88,7 @@ The benchmark used 50 reviews from `df_focused.csv`:
 
 T5 was the fastest model and produced the shortest outputs. GPT-2 was the slowest and produced outputs closest in length to the original reviews.
 
-## Qualitative Evaluation
+### Qualitative Evaluation
 
 Ten reviews were selected for manual evaluation. Each model output was scored from 1 to 5 for coherence, factual grounding, adverse-event focus, and overall quality.
 
