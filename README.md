@@ -120,7 +120,7 @@ GPT-2 frequently generated unsupported medical claims. Examples included invente
 
 GPT-2 also reversed the meaning of some negative reviews and failed to consistently summarize adverse-event information.
 
-## Final Model Selection
+### Final Model Selection
 
 BART was selected for the final summarization pipeline.
 
