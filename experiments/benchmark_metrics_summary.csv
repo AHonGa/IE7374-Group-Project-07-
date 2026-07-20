@@ -1,0 +1,4 @@
+model,reviews_processed,total_inference_seconds,average_seconds_per_review,median_seconds_per_review,average_output_source_ratio,exact_copy_rate,near_copy_rate
+BART,50,43.496,0.87,0.851,0.556,0.14,0.2
+T5,50,37.695,0.754,0.583,0.348,0.02,0.04
+GPT-2,50,53.174,1.063,0.808,0.814,0.0,0.0
