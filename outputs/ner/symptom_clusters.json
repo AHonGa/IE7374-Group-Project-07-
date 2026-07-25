@@ -1,0 +1,862 @@
+[
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety and panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "headaches",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety & depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "cluster headaches, & herniated",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety & panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "& general anxiety disorder",
+        "cluster": 1
+    },
+    {
+        "symptom": "high anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety and panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "a headache daily",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety & panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "valium for anxiety",
+        "cluster": 0
+    },
+    {
+        "symptom": "a headache daily",
+        "cluster": 2
+    },
+    {
+        "symptom": "headaches",
+        "cluster": 3
+    },
+    {
+        "symptom": "nausea",
+        "cluster": 3
+    },
+    {
+        "symptom": "depression/social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "lethargy/fatigue loss of",
+        "cluster": 0
+    },
+    {
+        "symptom": "depression & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "dizziness",
+        "cluster": 3
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety and panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "depression & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety disorder",
+        "cluster": 0
+    },
+    {
+        "symptom": "depression & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "both depression & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety disorder & fibromyalgia",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety & the fibromyalgia",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety/fibromyalgia",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety & depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "my social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety & depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "the general anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety & fibromyalgia",
+        "cluster": 1
+    },
+    {
+        "symptom": "anti-depressant/anti-anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "panick attacks& anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "nausea",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety disorder",
+        "cluster": 0
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety/panic",
+        "cluster": 2
+    },
+    {
+        "symptom": "social anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety and insomnia",
+        "cluster": 1
+    },
+    {
+        "symptom": "panic & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety & depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "social anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety & depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "headaches",
+        "cluster": 3
+    },
+    {
+        "symptom": "social anxiety & agoraphobia",
+        "cluster": 1
+    },
+    {
+        "symptom": "the unnecessary anxiety &",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety or panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety, mild depression",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "social anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "break pain",
+        "cluster": 0
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety disorder",
+        "cluster": 0
+    },
+    {
+        "symptom": "general anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "severe depression, anxiety and panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "depression & anxiety & recent development",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety & motivation &",
+        "cluster": 1
+    },
+    {
+        "symptom": "depression & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "lexapro/ativan for anxiety",
+        "cluster": 0
+    },
+    {
+        "symptom": "socanxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety & panic disorder & have",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety & panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety &",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety, depression",
+        "cluster": 0
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "ptsd & anxiety & migraines",
+        "cluster": 1
+    },
+    {
+        "symptom": "depression and anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "headaches",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety, panic attacks",
+        "cluster": 0
+    },
+    {
+        "symptom": "buspirone for anxiety",
+        "cluster": 0
+    },
+    {
+        "symptom": "a single anxiety day",
+        "cluster": 2
+    },
+    {
+        "symptom": "stress, anxiety",
+        "cluster": 0
+    },
+    {
+        "symptom": "aches & pains",
+        "cluster": 1
+    },
+    {
+        "symptom": "panic/anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "the savvy insomniac",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety & panic",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety and depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "a headache first two days",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "major depression & insomnia",
+        "cluster": 1
+    },
+    {
+        "symptom": "vistaril for the anxiety i'm on",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety attack",
+        "cluster": 0
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety & severe",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "escitalopram for my anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety and panic attacks",
+        "cluster": 1
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "depression and anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety, panic",
+        "cluster": 0
+    },
+    {
+        "symptom": "depression and anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety disorder",
+        "cluster": 0
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "worst anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "depression/anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety and panic attacks",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety, depression",
+        "cluster": 0
+    },
+    {
+        "symptom": "nausea",
+        "cluster": 3
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "social anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety and depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety/social",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety 1mg pill",
+        "cluster": 2
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "generalized anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "nausea",
+        "cluster": 3
+    },
+    {
+        "symptom": "generalised anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "generlised anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety &",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "depression/anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "depression, anxiety",
+        "cluster": 0
+    },
+    {
+        "symptom": "headaches",
+        "cluster": 3
+    },
+    {
+        "symptom": "high anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "depression and anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "depression and anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "bipolar-ptsd-ocd-anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety disorder",
+        "cluster": 0
+    },
+    {
+        "symptom": "general anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety disorder",
+        "cluster": 0
+    },
+    {
+        "symptom": "the early 90's for anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "social anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "gad & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety/panic",
+        "cluster": 2
+    },
+    {
+        "symptom": "panic/anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety and depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety sucks",
+        "cluster": 0
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "social anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "depression and anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "pain medicine ever",
+        "cluster": 2
+    },
+    {
+        "symptom": "nausea and vomiting",
+        "cluster": 1
+    },
+    {
+        "symptom": "valuim for anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "anxiety and depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "depression & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "as much as 2 consecutive days anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "nausea",
+        "cluster": 3
+    },
+    {
+        "symptom": "headaches",
+        "cluster": 3
+    },
+    {
+        "symptom": "social anxiety disorder & gad",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "dizziness",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety, depression, nerve",
+        "cluster": 0
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "generalized anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "depression and social anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "generalized anxiety disorder",
+        "cluster": 2
+    },
+    {
+        "symptom": "spain",
+        "cluster": 4
+    },
+    {
+        "symptom": "depression/anxiety",
+        "cluster": 2
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "insomnia",
+        "cluster": 4
+    },
+    {
+        "symptom": "depression & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "ocd & anxiety",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety and depression",
+        "cluster": 1
+    },
+    {
+        "symptom": "e.g headaches",
+        "cluster": 0
+    },
+    {
+        "symptom": "anxiety &",
+        "cluster": 1
+    },
+    {
+        "symptom": "diarrhea",
+        "cluster": 4
+    },
+    {
+        "symptom": "hypochiondria + generalized anxiety-",
+        "cluster": 1
+    },
+    {
+        "symptom": "anxiety",
+        "cluster": 3
+    },
+    {
+        "symptom": "headaches",
+        "cluster": 3
+    },
+    {
+        "symptom": "anxiety & depression",
+        "cluster": 1
+    }
+]
