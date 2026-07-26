@@ -145,20 +145,171 @@ A fixed sample of 10 classifier-flagged reviews was selected for the initial int
 
 ### Integrated Pipeline
 
-The implemented workflow is:
+The implemented workflow first uses DistilBERT to classify reviews for adverse-event content. Reviews with `ae_flag = 1` are then selected for summarization. Available NER entities and symptom-cluster metadata are preserved, and BART generates a summary for each flagged review. The generated summaries are then compared with human-written reference summaries using ROUGE-1, ROUGE-2, and ROUGE-L.
+
+## How to Run
+
+### 1. Clone the Repository
+
+Clone the project repository and move into the project folder:
+
+```bash
+git clone https://github.com/<repository-owner>/IE7374-Group-Project-07-.git
+cd IE7374-Group-Project-07-
+```
+
+Replace `<repository-owner>` with the GitHub username or organization that owns the repository.
+
+### 2. Install the Required Packages
+
+Install the project dependencies from the repository root:
+
+```bash
+pip install -r requirements.txt
+```
+
+The main packages used by the summarization pipeline include:
+
+- `torch`
+- `transformers`
+- `pandas`
+- `rouge-score`
+- `sentencepiece`
+- `accelerate`
+
+A CUDA-enabled GPU is recommended for faster BART inference, but the code can also run on CPU.
+
+### 3. Prepare the Input Data
+
+The integrated summarization pipeline uses the classifier output stored at:
 
 ```text
-DistilBERT classification
-        ↓
-Filter reviews with ae_flag = 1
-        ↓
-Preserve NER and symptom-cluster metadata
-        ↓
-BART summarization
-        ↓
-Human reference summaries
-        ↓
-ROUGE evaluation
+outputs/df_adverse_events.csv
+```
+
+The minimum required columns are:
+
+- `uniqueID`
+- `drugName`
+- `condition`
+- `review_clean`
+- `rating`
+- `ae_flag`
+
+The pipeline also preserves the following fields when available:
+
+- `ae_label`
+- `ae_probabilities`
+- `symptoms_extracted`
+- `symptom_clusters`
+- `cluster_id`
+
+Only reviews with `ae_flag = 1` are selected for BART summarization.
+
+### 4. Run the BART Summarization Script
+
+From the repository root, run:
+
+```bash
+python src/summarizer.py
+```
+
+The reusable BART implementation is located at:
+
+```text
+src/summarizer.py
+```
+
+The model checkpoint used is:
+
+```text
+facebook/bart-large-cnn
+```
+
+The checkpoint is downloaded automatically from Hugging Face when the script runs and should not be committed to the repository.
+
+Generated summaries are saved under:
+
+```text
+outputs/
+```
+
+### 5. Run the Full Colab Notebook
+
+The complete benchmarking and integrated pipeline workflow is available in:
+
+```text
+notebooks/BART_Summarization.ipynb
+```
+
+To reproduce the notebook results:
+
+1. Open the notebook in Google Colab.
+2. Select `Runtime`.
+3. Select `Change runtime type`.
+4. Choose `T4 GPU`.
+5. Run the notebook cells in order.
+6. Upload `outputs/df_adverse_events.csv` when prompted.
+
+The notebook performs:
+
+- dataset loading and validation
+- inspection of classifier and symptom fields
+- filtering of reviews with `ae_flag = 1`
+- fixed 10-review sample selection
+- BART model loading
+- summary generation
+- inference-time measurement
+- compression-ratio calculation
+- human reference-summary preparation
+- ROUGE-1, ROUGE-2, and ROUGE-L evaluation
+- final output export
+
+### 6. Run ROUGE Evaluation
+
+The reusable ROUGE evaluation script is located at:
+
+```text
+utils/rouge_evaluation.py
+```
+
+The evaluation input must contain the following columns:
+
+- `reference_summary`
+- `bart_summary`
+
+Run the evaluation from the repository root:
+
+```bash
+python utils/rouge_evaluation.py
+```
+
+The script calculates:
+
+- ROUGE-1 precision, recall, and F1
+- ROUGE-2 precision, recall, and F1
+- ROUGE-L precision, recall, and F1
+- average scores across all evaluated summaries
+
+The completed Milestone 4 ROUGE outputs are stored at:
+
+```text
+outputs/bart_rouge_detailed_results.csv
+outputs/bart_rouge_summary.csv
+```
+
+### 7. Review the Milestone 4 Outputs
+
+The main integrated summarization and evaluation files are:
+
+```text
+outputs/bart_integrated_summaries_10.csv
+outputs/bart_reference_evaluation_completed.csv
+outputs/bart_rouge_detailed_results.csv
+outputs/bart_rouge_summary.csv
+```
+
+These files contain the classifier-flagged reviews, BART-generated summaries, human-written reference summaries, detailed row-level ROUGE scores, and average ROUGE results.
 
 ## References
 
