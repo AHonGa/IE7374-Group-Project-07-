@@ -151,43 +151,38 @@ The implemented workflow first uses DistilBERT to classify reviews for adverse-e
 
 ### 1. Clone the Repository
 
-Clone the project repository and move into the project folder:
+Clone the repository and open the project folder:
 
 ```bash
 git clone https://github.com/<repository-owner>/IE7374-Group-Project-07-.git
 cd IE7374-Group-Project-07-
 ```
 
-Replace `<repository-owner>` with the GitHub username or organization that owns the repository.
+Replace `<repository-owner>` with the GitHub account that owns the repository.
 
 ### 2. Install the Required Packages
 
-Install the project dependencies from the repository root:
+From the main project folder, run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-The main packages used by the summarization pipeline include:
+The BART portion of the project uses packages such as `torch`, `transformers`, `pandas`, `rouge-score`, `sentencepiece`, and `accelerate`.
 
-- `torch`
-- `transformers`
-- `pandas`
-- `rouge-score`
-- `sentencepiece`
-- `accelerate`
+A GPU is recommended because BART runs much faster on GPU, but the code can still run on CPU.
 
-A CUDA-enabled GPU is recommended for faster BART inference, but the code can also run on CPU.
+### 3. Check the Input File
 
-### 3. Prepare the Input Data
-
-The integrated summarization pipeline uses the classifier output stored at:
+The integrated BART pipeline uses:
 
 ```text
 outputs/df_adverse_events.csv
 ```
 
-The minimum required columns are:
+This file is the merged output from the DistilBERT classification, NER, and symptom clustering steps.
+
+At minimum, the file should contain:
 
 - `uniqueID`
 - `drugName`
@@ -196,7 +191,7 @@ The minimum required columns are:
 - `rating`
 - `ae_flag`
 
-The pipeline also preserves the following fields when available:
+The file may also include:
 
 - `ae_label`
 - `ae_probabilities`
@@ -204,9 +199,9 @@ The pipeline also preserves the following fields when available:
 - `symptom_clusters`
 - `cluster_id`
 
-Only reviews with `ae_flag = 1` are selected for BART summarization.
+Only reviews where `ae_flag = 1` are sent to BART for summarization.
 
-### 4. Run the BART Summarization Script
+### 4. Run the BART Script
 
 From the repository root, run:
 
@@ -214,93 +209,59 @@ From the repository root, run:
 python src/summarizer.py
 ```
 
-The reusable BART implementation is located at:
-
-```text
-src/summarizer.py
-```
-
-The model checkpoint used is:
+The script uses:
 
 ```text
 facebook/bart-large-cnn
 ```
 
-The checkpoint is downloaded automatically from Hugging Face when the script runs and should not be committed to the repository.
+The model is downloaded from Hugging Face the first time the script is run.
 
-Generated summaries are saved under:
+The generated summaries are saved in the `outputs/` folder.
 
-```text
-outputs/
-```
+### 5. Run the Colab Notebook
 
-### 5. Run the Full Colab Notebook
-
-The complete benchmarking and integrated pipeline workflow is available in:
+The full benchmarking and Milestone 4 integration work is located in:
 
 ```text
 notebooks/BART_Summarization.ipynb
 ```
 
-To reproduce the notebook results:
+To run it in Google Colab:
 
-1. Open the notebook in Google Colab.
-2. Select `Runtime`.
+1. Open the notebook in Colab.
+2. Go to `Runtime`.
 3. Select `Change runtime type`.
 4. Choose `T4 GPU`.
-5. Run the notebook cells in order.
-6. Upload `outputs/df_adverse_events.csv` when prompted.
+5. Run the cells from top to bottom.
+6. Upload `df_adverse_events.csv` when prompted.
 
-The notebook performs:
+The notebook includes the original BART, T5, and GPT-2 benchmark as well as the Milestone 4 DistilBERT-to-BART integration and ROUGE evaluation.
 
-- dataset loading and validation
-- inspection of classifier and symptom fields
-- filtering of reviews with `ae_flag = 1`
-- fixed 10-review sample selection
-- BART model loading
-- summary generation
-- inference-time measurement
-- compression-ratio calculation
-- human reference-summary preparation
-- ROUGE-1, ROUGE-2, and ROUGE-L evaluation
-- final output export
+### 6. Run the ROUGE Evaluation
 
-### 6. Run ROUGE Evaluation
-
-The reusable ROUGE evaluation script is located at:
+The ROUGE utility is located in:
 
 ```text
 utils/rouge_evaluation.py
 ```
 
-The evaluation input must contain the following columns:
+The evaluation file must include these two columns:
 
 - `reference_summary`
 - `bart_summary`
 
-Run the evaluation from the repository root:
+Run the script from the repository root:
 
 ```bash
 python utils/rouge_evaluation.py
 ```
 
-The script calculates:
+The script calculates ROUGE-1, ROUGE-2, and ROUGE-L precision, recall, and F1 scores.
 
-- ROUGE-1 precision, recall, and F1
-- ROUGE-2 precision, recall, and F1
-- ROUGE-L precision, recall, and F1
-- average scores across all evaluated summaries
+### 7. Review the Output Files
 
-The completed Milestone 4 ROUGE outputs are stored at:
-
-```text
-outputs/bart_rouge_detailed_results.csv
-outputs/bart_rouge_summary.csv
-```
-
-### 7. Review the Milestone 4 Outputs
-
-The main integrated summarization and evaluation files are:
+The main Milestone 4 files are:
 
 ```text
 outputs/bart_integrated_summaries_10.csv
@@ -309,7 +270,7 @@ outputs/bart_rouge_detailed_results.csv
 outputs/bart_rouge_summary.csv
 ```
 
-These files contain the classifier-flagged reviews, BART-generated summaries, human-written reference summaries, detailed row-level ROUGE scores, and average ROUGE results.
+These files contain the selected adverse-event reviews, BART summaries, human reference summaries, and ROUGE results.
 
 ## References
 
