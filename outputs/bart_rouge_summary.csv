@@ -1,0 +1,4 @@
+metric,average_precision,average_recall,average_f1
+ROUGE-1,0.1615,0.3264,0.2124
+ROUGE-2,0.0277,0.058,0.0371
+ROUGE-L,0.108,0.2171,0.1417
