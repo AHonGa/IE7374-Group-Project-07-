@@ -128,6 +128,38 @@ Although T5 was faster and slightly more concise, BART achieved the strongest co
 
 GPT-2 was rejected because of frequent hallucinations and poor factual reliability.
 
+## Milestone 4: Integrated BART Pipeline
+
+For Milestone 4, the selected BART model was connected to the DistilBERT adverse-event classifier output.
+
+The merged classifier dataset contained 11,814 reviews, including:
+
+- 5,490 reviews with `ae_flag = 1`
+- 6,324 reviews with `ae_flag = 0`
+- No missing `review_clean` values
+- No duplicate `uniqueID` values
+
+Only reviews classified with `ae_flag = 1` were eligible for BART summarization.
+
+A fixed sample of 10 classifier-flagged reviews was selected for the initial integrated pipeline test. Symptom extraction and clustering metadata were preserved when available.
+
+### Integrated Pipeline
+
+The implemented workflow is:
+
+```text
+DistilBERT classification
+        ↓
+Filter reviews with ae_flag = 1
+        ↓
+Preserve NER and symptom-cluster metadata
+        ↓
+BART summarization
+        ↓
+Human reference summaries
+        ↓
+ROUGE evaluation
+
 ## References
 
 - Hutto, C. J., & Gilbert, E. (2014). VADER: A parsimonious rule-based model for sentiment analysis of social media text.
